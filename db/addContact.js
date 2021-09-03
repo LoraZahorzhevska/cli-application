@@ -13,6 +13,7 @@ const addContact = async (name, email, phone) => {
     contacts.push(newContact);
 
     await updateContacts(contacts);
+    // console.table(newContact);
     return newContact;
   } catch (error) {
     throw error;
